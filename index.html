@@ -1,146 +1,28 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biswajit Chanda</title>
-    <link rel="stylesheet" href="style.css">
-	<script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
-            
-            for (const link of smoothScrollLinks) {
-                link.addEventListener("click", smoothScroll);
-            }
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biswajit Chanda | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-            function smoothScroll(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute("href").substring(1);
-                const targetElement = document.getElementById(targetId);
-                const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: "smooth"
-                });
-            }
-        });
-    </script>
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.2",
+    "vite": "https://aistudiocdn.com/vite@^7.1.4"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-B1KiXZkg.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dc21q8HZ.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <!--li><a href="#projects">Projects</a></li-->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="photo" class="container">
-        <img src="my photo.jpg" alt="Your Photo">
-        <h1>Biswajit Chanda</h1>
-        <h4>Tech Lead</h4>
-    </section>
-
-    <section id="about" class="container">
-        <h1>About Me</h1>
-        <p>A highly skilled and motivated web developer with a strong background in Java, Spring Boot, Oracle OSM, Ericsson Order Care, Integration Framework. Experienced in building responsive and user-friendly web applications. Seeking opportunities to contribute to exciting or new web projects.</p>
-    </section>
-
-    <section id="experience" class="container">
-        <h1>Experience</h1>
-        <article class="experience-item">
-            <h2>Tech Lead</h2>
-            <p class="company">BlueRose Technology</p>
-            <p class="date">September 2021 - Present</p>
-            <ul><i>
-                <li>Worked as a Tech Lead in a team of 20 for 25 months.</li>
-                <li>Collaborated with cross-functional teams to gather and analyze requirements, ensuring scalability, efficiency, and adherence to industry best practices.</li>
-                <li>Built the comprehensive E2E solution by translating the design into reality, harmoniously blending coding and configuration, and adapting to evolving change requests.</li>
-				<li>Worked closely with other business analysts, development teams and infrastructure specialists to deliver high availability solutions using OSM O2A solution.</li>
-				<li>Developed order monitoring dashboard, OSM auto retry framework to reduce AMS cost upto 40%.</li>
-			</i>	
-			</ul>
-        </article>
-        <article class="experience-item">
-            <h2>Senior Software Engineer</h2>
-            <p class="company">Tech Mahindra</p>
-            <p class="date">May 2020 - August 2021</p>
-            <ul><i>
-                <li>Worked as a Senior Software Engineer in a team of 20 for 16 months.</li>
-				<li>Worked on cross-functional collaboration for high-availability solutions.</li>
-				<li>Collaborated closely with business analysts to develop technically robust solutions tailored to organizational goals.</li>
-				<li>Bridged the communication gap between technical and non-technical team members.</li>
-				<li>Ensured alignment and well-informed stakeholders for mission-critical applications.</li>
-				<li>Built infrastructure specialists for resilience.</li>
-				<li>Optimized server configurations and implemented failover mechanisms.</li>
-				<li>Enhanced network redundancy for seamless application operation.</li>
-				<li>Reduced risk of disruptions and safeguarded critical business processes.</li>
-				<li>Created code base revamp and modernization.</li>
-				<li>Overhauled outdated code bases to modern development standards.</li>
-				<li>Deconstructed monolithic code into modular components for accelerated development.</li>
-				<li>Improved code quality and reduced susceptibility to costly downtime.</li>
-			</i></ul>
-        </article>
-		<article class="experience-item">
-            <h2>Solution Integrator</h2>
-            <p class="company">Ericsson Global India Pvt Ltd</p>
-            <p class="date">September 2018 - May 2020</p>
-            <ul><i>
-                <li>Worked as a Solution Integrator in a team of 6 for 18 months.</li>
-				<li>Worked on conceiving, designing, and developing a solution to address evolving business needs.</li>
-				<li>Conducted meticulous analysis and collaborated with stakeholders to define a clear roadmap.</li>
-				<li>Created a sustainable and scalable solution, ready for future changes.</li>
-				<li>Built the solution through coding, integration, and rigorous testing to meet performance benchmarks.</li>
-				<li>Architected updates and enhanced security of an existing legacy code base.</li>
-				<li>Ensured compatibility with modern technologies and operational continuity.</li>
-				<li>Prepared the ground for integrating the new solution with the existing infrastructure.</li>
-				<li>Designed and developed a custom library to bridge the limitations of existing products.</li>
-				<li>Seamlessly integrated the library with legacy systems and the new solution.</li>
-				<li>Extended functionality, enhancing the overall system's capabilities.</li>
-				<li>Created a strategic asset empowering the system beyond immediate project requirements.</li>
-			</i></ul>
-        </article>
-		<article class="experience-item">
-            <h2>Software Engineer</h2>
-            <p class="company">Wipro technologies</p>
-            <p class="date">July 2014 - September 2018</p>
-            <ul><i>
-                <li>Worked as a Software Engineer in a team of 20 for 50 months.</li>
-				<li>Created High-Level Design (HLD) and Low-Level Design (LLD) documents as blueprints for the project's architecture and implementation.</li>
-				<li>Led the design phase, collaborating with cross-functional teams to ensure a technically sound and strategically aligned design.</li><li>Detailed the architecture, components, workflows, and technologies, emphasizing scalability, performance, and best practices.</li>
-				<li>Deeply analyzed project specifications to understand performance expectations and business requirements.</li>
-				<li>Designed technology solutions that exceeded performance expectations and were future-proof.</li>
-				<li>Worked closely with stakeholders to align technological design with their needs and provide long-term value.</li>
-				<li>Maintained transparent communication with business teams and project participants.</li>
-				<li>Provided continuous updates on project status, design decisions, and development progress.</li>
-				<li>Encouraged stakeholder participation and input, ensuring everyone's needs were addressed.</li>
-				<li>Kept the project on track and within the specified timeline.</li>
-			</i></ul>
-        </article>
-    </section>
-
-    <!--section id="projects" class="container">
-        <h1>Projects</h1>
-        <article class="project">
-            <h2>Project 1</h2>
-            <p>Description of project 1.</p>
-        </article>
-        <article class="project">
-            <h2>Project 2</h2>
-            <p>Description of project 2.</p>
-        </article>
-    </section-->
-
-    <section id="contact" class="container">
-        <h1>Contact Information</h1>
-        <address>
-            <p>Email: <a href="mailto:chanda.b0@gmail.com">chanda.b0@gmail.com</a> </p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/biswajitchanda">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/chandab0">GitHub Profile</a></p>
-        </address>
-    </section>
+  <body class="bg-gray-900 text-gray-200 font-sans">
+    <div id="root"></div>
 </body>
 </html>
